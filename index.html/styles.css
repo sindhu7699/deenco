@@ -1,6 +1,23 @@
 body{
-  background-color: #F5EDED;
+  background-color: white;
     font-family: "Montserrat", sans-serif;
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 0 0 100%;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.dot.active {
+    background-color: #717171;
 }
 .logo{
   height:50px;
@@ -9,7 +26,7 @@ body{
 .topnav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #7FA1C3;
+  background-color: white;
   height: 50px;
   width: 100%;
   padding-top: 0px;
@@ -47,20 +64,20 @@ body{
   padding: 20px 10px;
   cursor: pointer;
   text-decoration: none;
-  background-color:#7FA1C3;
+  background-color:white;
   height:50px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
 }
 .navdrop1:hover {
-  background-color: #333;
+  background-color: black;
   color:white;
 }
 .navdrop-menu {
   display: none;
   position: absolute;
-  background-color: #E2DAD6;
+  background-color: grey;
   color:black;
   width: 160px;
   padding-left: 0;
@@ -70,7 +87,7 @@ body{
   list-style-type: none;
 }
 .navdrop-menu .dropdown-item {
-  color: black;
+  color: white;
   padding: 12px ;
   text-decoration: none;
   display: block;
@@ -83,7 +100,7 @@ body{
   display: block;
 }
 .topnav-in-right{
-  margin-left: 600px;
+  margin-left: 500px;
 }
 .topnav-in-right button{
   color:#03346E;
