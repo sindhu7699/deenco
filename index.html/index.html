@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,6 +29,7 @@
       </a>
       <a class="nav" href="#gallery">Gallery</a>
       <a class="nav" href="#career">Career</a>
+      <a class="nav" href="#contact">Contact Us</a>
     </div>
     <div class="topnav-in-right">
       <a class="nave" href="#login">
@@ -42,12 +43,26 @@
       </a>
     </div>
   </div>
-  <div class="container1" style="margin-top:20px;">
-    <img src="homepimg.jpeg" alt="homeimg" style="float:right;width:750px;margin-right:25px;height:500px">
-    <h1 style="font-family:Montserrat;padding-top:200px;margin-left:25px;">Welcome to Devi Engineering and Constructions Private Ltd.</h1>
-  </div>
-  <hr style="margin-top:250px;">
-  <div class="container2" style="margin-top:20px;height:350px">
+  <div class="carousel" style="float:right;position:relative;width:80%;max-width:700px;overflow:hidden;margin-top:30px">
+        <div class="carousel-track" style="display:flex;transition:transform 1s ease-in-out;">
+            <img src="homepimg.jpeg" alt="Image 1" class="carousel-image">
+            <img src="banner-1.jpg" alt="Image 2" class="carousel-image">
+            <img src="banner-2.jpg" alt="Image 3" class="carousel-image">
+            <img src="banner-4.jpg" alt="Image 3" class="carousel-image">
+            <img src="banner-5.png" alt="Image 3" class="carousel-image">
+            <!-- Add more images as needed -->
+        </div>
+        <div class="carousel-dots" style="position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);display: flex;justify-content: center;">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Add more dots corresponding to the number of images -->
+            </div>
+    </div>
+    <h1 style="padding-top:200px;margin-left:25px;">Welcome to Devi Engineering and Constructions Private Ltd.</h1>
+  <hr style="margin-top:300px;">
+  <div class="container2" style="margin-top:50px;height:350px">
     <img src="history.jpg" alt="history" style="float:left;margin-left:25px;width:350px;height:350px">
     <div style="margin-left:500px;margin-right:150px">
       <h1 style="color:#6482AD;padding-top:30px;">OUR HISTORY</h1>
@@ -82,7 +97,7 @@
     </div>
   </div>
   <hr style="margin-top:150px;">
-  <div class="footer"">
+  <div class="footer">
         <div class=" footer-in">
     <h4>About Us</h4>
     <hr>
@@ -113,6 +128,6 @@
   <p style="margin-top:290px;color:#7FA1C3;margin-left:100px;">
     © copyright 2012 All Rights Reserved To DECPL- Powered By Devi Engineering And Constructions Private Limited.
   </p>
+  <script src="script.js"></script>
 </body>
-
 </html>
